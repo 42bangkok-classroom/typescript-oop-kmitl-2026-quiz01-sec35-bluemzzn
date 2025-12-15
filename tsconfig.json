@@ -21,6 +21,6 @@
     "moduleDetection": "force",
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "foobar.ts"],
+  "include": ["src/**/*.ts", "src/q05/foobar.ts"],
   "exclude": ["node_modules", "dist"]
 }
