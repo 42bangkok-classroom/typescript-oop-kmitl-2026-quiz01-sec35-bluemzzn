@@ -1,3 +1,11 @@
+let sizeSumCheck = process.argv[2];
+
+// Check if input is empty or undefined
+if(!sizeSumCheck || sizeSumCheck.trim() === ""){
+    console.log("Invalid Input");
+    process.exit();
+}
+
 let inputSum = Number(process.argv[2]);
 
 if (Number.isNaN(inputSum) || inputSum < 0 || inputSum === undefined) {

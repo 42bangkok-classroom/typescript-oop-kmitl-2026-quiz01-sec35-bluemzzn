@@ -1,3 +1,11 @@
+let sizeXOCheck = process.argv[2];
+
+// Check if input is empty or undefined
+if(!sizeXOCheck || sizeXOCheck.trim() === ""){
+    console.log("Invalid Input");
+    process.exit();
+}
+
 let sizeXO = Number(process.argv[2]);
 
 if (Number.isNaN(sizeXO) || sizeXO <= 0 || sizeXO === undefined) {
