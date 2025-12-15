@@ -1,6 +1,15 @@
+let rowNum = process.argv[2];
+
+// Check if input is empty or undefined
+if(!rowNum || rowNum.trim() === ""){
+    console.log("Invalid Input");
+    process.exit();
+}
+
+
 let rowNumDel = Number(process.argv[2]);
 
-if (Number.isNaN(rowNumDel) || rowNumDel < 0 || rowNumDel === undefined) {
+if (Number.isNaN(rowNumDel) || rowNumDel <= 0 || rowNumDel === undefined) {
     process.stdout.write("Invalid Input");
     process.exit();
 }
