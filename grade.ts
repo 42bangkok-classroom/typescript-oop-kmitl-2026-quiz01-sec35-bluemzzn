@@ -6,17 +6,17 @@ if(Number.isNaN(inputGrade) || inputGrade < 0 || inputGrade > 100){
 }
 else{
     if(inputGrade >= 80){
-        console.log("A");
+        console.log("Grade is A");
     }
     else if(inputGrade >= 70){
-        console.log("B");
+        console.log("Grade is B");
     }
     else if(inputGrade >= 60){
-        console.log("C");
+        console.log("Grade is C");
     }
     else if(inputGrade >= 50){
-        console.log("D");
+        console.log("Grade is D");
     }else{
-        console.log("F");
+        console.log("Grade is F");
     }
 }
