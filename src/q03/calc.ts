@@ -20,7 +20,7 @@ if (operator === "div" && num2 === 0) {
   process.exit(0);
 }
 
-let result: number;
+let result: number = 0;
 
 switch (operator) {
   case "add":

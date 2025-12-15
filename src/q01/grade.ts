@@ -1,20 +1,28 @@
-let inputGrade = Number(process.argv[2]);
+let inputGrade = process.argv[2];
 
-if(Number.isNaN(inputGrade) || inputGrade < 0 || inputGrade > 100 || inputGrade === undefined){
+// Check if input is empty or undefined
+if(!inputGrade || inputGrade.trim() === ""){
+    console.log("Invalid Input");
+    process.exit();
+}
+
+let grade = Number(inputGrade);
+
+if(Number.isNaN(grade) || grade < 0 || grade > 100){
     console.log("Invalid Input");
     process.exit();
 }
 else{
-    if(inputGrade >= 80){
+    if(grade >= 80){
         console.log("Grade is A");
     }
-    else if(inputGrade >= 70){
+    else if(grade >= 70){
         console.log("Grade is B");
     }
-    else if(inputGrade >= 60){
+    else if(grade >= 60){
         console.log("Grade is C");
     }
-    else if(inputGrade >= 50){
+    else if(grade >= 50){
         console.log("Grade is D");
     }else{
         console.log("Grade is F");
