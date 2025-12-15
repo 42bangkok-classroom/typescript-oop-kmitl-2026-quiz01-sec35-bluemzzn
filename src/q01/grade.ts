@@ -1,6 +1,6 @@
 let inputGrade = Number(process.argv[2]);
 
-if(Number.isNaN(inputGrade) || inputGrade < 0 || inputGrade > 100){
+if(Number.isNaN(inputGrade) || inputGrade < 0 || inputGrade > 100 || inputGrade === undefined){
     console.log("Invalid Input");
     process.exit();
 }
